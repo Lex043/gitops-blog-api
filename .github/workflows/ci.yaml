@@ -34,5 +34,5 @@ jobs:
                   context: .
                   push: true
                   tags: |
-                      ${{ steps.login-ecr.outputs.registry }}/nestjs-blog-api:${{ github.sha }}
-                      ${{ steps.login-ecr.outputs.registry }}/nestjs-blog-api:latest
+                      ${{ steps.login-ecr.outputs.registry }}/blog-api:${{ github.sha }}
+                      ${{ steps.login-ecr.outputs.registry }}/blog-api:latest
